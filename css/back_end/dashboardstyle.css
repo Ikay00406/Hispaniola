@@ -1,0 +1,155 @@
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ body {
+  font-family: cursive;
+  background-color: rgba(127, 255, 212, 0.747);
+ }
+ a {
+  text-decoration: none;
+ }
+ li {
+  list-style: none;
+ }
+
+ /* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #102053;
+  color: #fff;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ /* LOGO */
+ .logo {
+  font-size: 32px;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+ }
+ .menu li:hover:not(.active) {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+ }
+ 
+.menu li.active {
+  background-color: #04aa6d;
+  border-radius: 5px;
+}
+ 
+
+ /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+ .menu { 
+  display:none;
+  position: absolute;
+  background-color:#102053;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+ }
+ .menu li:hover {
+  display: inline-block;
+  background-color:#4c9e9e;
+  transition: 0.3s ease;
+ }
+ .menu li + li {
+  margin-top: 12px;
+ }
+ input[type=checkbox]:checked ~ .menu{
+  display: block;
+ }
+ .hamburger {
+  display: block;
+ }
+ }
+
+ /* BODY STYLE */
+ .maindiv {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 3%;
+    padding: 0 16px;
+ }
+ #maindiv1 {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 3%;
+  padding: 0 16px;
+}
+ div p {
+  border: 1px solid #000;
+  padding: 1em;
+  background-color: #fff;
+  color: #000;
+}
+#newdiv {
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 3%;
+	padding: 0 16px;
+}
+/* p {
+  border: 1px solid #000;
+  padding: 1em;
+  background-color: #fff;
+  color: #000;
+} */
+
+.myh2 {
+  margin-top: 20px;
+}
+
+hr {
+  border: 1px solid #000;
+  margin: 15px 0;
+}
+
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
+
+.alertdiv {
+  margin: 15px 0;
+  height: auto;
+  width: 100%;
+}

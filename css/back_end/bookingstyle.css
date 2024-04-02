@@ -1,0 +1,119 @@
+* { 
+    box-sizing: border-box;
+    margin: 0px; 
+    padding: 0px; 
+}
+
+/* TABLE STYLE */
+#mytable {
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#mytable thead tr {
+    background-color: #04aa6d;
+    color: #ffffff;
+    text-align: left;
+}
+
+#mytable th,
+#mytable td {
+    padding: 12px 15px;
+}
+
+#mytable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#mytable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#mytable tbody tr:last-of-type {
+    border-bottom: 2px solid #04aa6d;
+}
+
+#mytable tbody tr:hover {
+    background-color: #e2d8d8c5;
+    color: #009879;
+}
+
+.maindiv {
+    background-color: #fff;
+}
+
+#newdiv {
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 3%;
+	padding: 0 16px;
+}
+
+#maindiv1 {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 3%;
+    padding: 0 16px;
+  }
+
+p {
+    border: 1px solid #000;
+    padding: 1em;
+    background-color: #fff;
+    color: #000;
+}
+
+.subdiv {
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* BUTTON STYLE */
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ee3022;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+    }
+
+    button:hover span {
+    padding-right: 15px;
+    }
+
+    button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
